@@ -1,0 +1,8 @@
+      
+        val interpolada = "contador = $contador"
+        val interpoladaExpr = "soma = ${contador + 10}"  -> erro ao ler $
+        val quote = "aspas \" internas" -> nao reconhece essas 3 aspas e dá aspas nao fechadas
+
+        val c1 = 'a'
+        val c2 = '\n'
+        val c3 = '\' -> isso dá literal de caractere invalido
