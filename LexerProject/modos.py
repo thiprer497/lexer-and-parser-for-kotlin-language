@@ -1,0 +1,1 @@
+# Optionally: classes helpers para modos (STRING/RAW/DEFAULT)
