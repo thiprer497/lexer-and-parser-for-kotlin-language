@@ -31,14 +31,14 @@ Alunos:
 
     **Linux / Mac:**
     ```bash
-    python3 -m LexerProject.entradaLexerEx  
+    python3 -m LexerProject.main  
     ```
 
     **Windows:**
     ```bash
-    python -m LexerProject.entradaLexerEx 
+    python -m LexerProject.main 
     ```
-    > **Nota:** O ponto de entrada (Main) está no arquivo `entradaLexerEx.py`. Ao executar, ele processará o código de exemplo (`sample`) contido no final do arquivo e exibirá os tokens no terminal.
+    > **Nota:** O ponto de entrada (Main) está no arquivo `main.py`. Ao executar, ele processará o código de exemplo (`sample`) contido no final do arquivo e exibirá os tokens no terminal.
 
 ## Como Rodar o Código (Via Docker)
 
@@ -58,7 +58,7 @@ WORKDIR /app
 COPY . /app
 
 # Executa o analisador apontando para o pacote correto
-CMD ["python", "-m", "LexerProject.entradaLexerEx"]
+CMD ["python", "-m", "LexerProject.main"]
 ```
 
 ### 2. Construir a Imagem
@@ -99,7 +99,7 @@ Abaixo segue a descrição da responsabilidade de cada módulo do projeto:
 *   **`token_stream.py`**
     *   Uma abstração acima do Lexer. Recebe a lista de tokens gerada e fornece métodos para o futuro Analisador Sintático (Parser) consumir esses tokens sequencialmente, como `next()` (consome), `peek()` (espia o próximo sem consumir) e `expect()` (valida se o próximo token é do tipo esperado).
 
-*   **`entradaLexerEx.py`**
+*   **`main.py`**
     *   Arquivo principal de execução. Contém uma string de código Kotlin de teste (cobrindo casos de borda como Shebang, comentários aninhados e literais complexos) e aciona o Lexer, imprimindo a sequência de tokens encontrados no console.
 
 *   **`__init__.py`**
