@@ -8,4 +8,4 @@ WORKDIR /app
 COPY . /app
 
 # Executa o analisador apontando para o pacote correto
-CMD ["python", "-m", "LexerProject.entradaLexerEx"]
+CMD ["python", "-m", "LexerProject.main"]
