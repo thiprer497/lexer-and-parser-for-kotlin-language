@@ -20,7 +20,7 @@
 
 1.  **Clone o repositório:**
     ```bash
-    git clone https://github.com/thiprer497/lexer_kotlin_python.git
+    https://github.com/thiprer497/lexer-and-parser-for-kotlin-language.git
     ```
 
 2.  **Acesse a pasta raiz:**
