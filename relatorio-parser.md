@@ -272,7 +272,7 @@ Ele realiza apenas análise sintática.
 ---
 
 
-# 7. Possíveis Melhorias
+# 6. Possíveis Melhorias
 
 - Implementar análise semântica
 - Suporte a `when`
@@ -284,7 +284,7 @@ Ele realiza apenas análise sintática.
 
 ---
 
-# 8. Conclusão
+# 7. Conclusão
 
 O parser LL implementado é uma solução sólida para análise sintática de um subconjunto de Kotlin.
 
